@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import "./assests/styles/animation.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+
+:root {
+    --navbar: #1F57A5;
+    --main: #82AAE3;
+    --bg-main: #BFEAF5;
+    --card-linear-1: #6E95E1;
+    --card-linear-2: #1b326282;
+    --lighter-box: #AECBF2;
+    --light-box: #1ec1eaa8;
+    --dark-box: #AECBF2;
+    --darker-box: #3C6EB3;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(180deg, var(--main) 0%, var(--bg-main) 100%) no-repeat !important;
+}

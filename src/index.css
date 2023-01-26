@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.flexRowCenter {
+    @apply flex flex-row justify-center items-center;
+}
+
+.flexColCenter {
+    @apply flex flex-col justify-center items-center;
+}

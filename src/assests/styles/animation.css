@@ -1,0 +1,17 @@
+/* ! Mobile Navbar Logo Animation Start */
+
+.animate-rotate {
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ? Mobile Navbar Logo Animation End */
