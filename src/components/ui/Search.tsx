@@ -32,7 +32,7 @@ function Search() {
 
   const getCountryStatistics = async () => {
     try {
-
+      if (getCountry === "") return window.alert("Please enter a country name");
       const res = await axios.get(URL, options);
       if (res.status === 200) {
         res.data.response[0] === undefined ? window.alert("Country not found") : setCountryStats(res.data.response[0]);
