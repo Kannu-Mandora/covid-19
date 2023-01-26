@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import logo from "../../assests/images/logo.png";
+import BeforeSearch from "./BeforeSearch";
 import {
   Accordion,
   AccordionItem,
@@ -61,7 +62,7 @@ function Search() {
           id="search-country"
           value={getCountry}
           onChange={(e) => setCountry(e.target.value)}
-          className="bg-[color:var(--light-box)] rounded p-2 text-white placeholder:text-gray-300 outline-none"
+          className="bg-[color:var(--darker-box)] rounded p-2 text-white placeholder:text-gray-300 outline-none"
           placeholder="Search Country"
         />
         <button
@@ -75,7 +76,7 @@ function Search() {
       {/* Cases Cards */}
       {isFetch ? (
 
-        <div className="m-5">
+        <div className="h-max p-5 bg-gradient-to-b from-[color:var(--card-linear-1)] to-[color:var(--card-linear-2)] m-5 rounded shadow-2xl">
           <span>Population: {population}</span>
           <Accordion allowToggle className="grid gap-5">
             <AccordionItem className="grid gap-5 bg-[color:var(--darker-box)] text-white border-none" >
@@ -131,7 +132,7 @@ function Search() {
             </AccordionItem>
           </Accordion>
         </div>
-      ) : null
+      ) : <BeforeSearch />
       }
 
     </>
